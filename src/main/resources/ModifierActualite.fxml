@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="532.0" prefWidth="572.0" stylesheets="@Style/stylesheetback.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ModifierActualiteController">
+   <children>
+      <AnchorPane layoutX="98.0" layoutY="15.0" prefHeight="506.0" prefWidth="373.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="78.0" layoutY="14.0" prefHeight="17.0" prefWidth="217.0" text="Modifier Actualité">
+               <font>
+                  <Font name="Century Gothic Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button id="button-mezyen" layoutX="127.0" layoutY="452.0" mnemonicParsing="false" onAction="#ModifierAct" prefHeight="33.0" prefWidth="87.0" text="Modifier" />
+            <Label layoutX="45.0" layoutY="417.0" text="Chemin :" />
+            <TextField fx:id="txtCheminActModif" layoutX="147.0" layoutY="405.0" prefHeight="25.0" prefWidth="207.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="174.0" layoutY="74.0" text="Id :">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="167.0" layoutY="113.0" text="Titre :">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="155.0" layoutY="165.0" text="Contenu :">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="168.0" layoutY="258.0" text="Date:">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="161.0" layoutY="319.0" text="Catégorie :">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="175.0" layoutY="376.0" text="Auteur :">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField fx:id="txtidActModif" layoutX="243.0" layoutY="71.0" prefHeight="25.0" prefWidth="165.0" />
+      <TextField fx:id="txtTitreActModif" layoutX="243.0" layoutY="110.0" prefHeight="25.0" prefWidth="165.0" />
+      <TextArea fx:id="txtcontenuActModif" layoutX="243.0" layoutY="158.0" prefHeight="85.0" prefWidth="165.0" />
+      <TextField fx:id="txtauteurActModif" layoutX="246.0" layoutY="373.0" prefHeight="25.0" prefWidth="175.0" />
+      <DatePicker fx:id="txtdateActModif" layoutX="238.0" layoutY="255.0" />
+      <ComboBox fx:id="txtCategModif" layoutX="241.0" layoutY="316.0" prefHeight="25.0" prefWidth="175.0" />
+   </children>
+</AnchorPane>
